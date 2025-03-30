@@ -233,3 +233,18 @@ body{
     z-index: 2;
 }
 
+/* This is the new rule to hide the toggle container when in forgot password mode
+.container.forgot-mode .toggle-container {
+    display: none;
+} */
+
+.container.forgot-mode .toggle-panel {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Nhưng vẫn giữ nền màu tím đẹp */
+.container.forgot-mode .toggle {
+    background: linear-gradient(to right, #5c6bc0, #512da8);
+}
