@@ -206,3 +206,30 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+/* Ẩn forgot-password mặc định */
+.forgot-password {
+    display: none;
+}
+
+/* Khi container có class forgot-mode thì chỉ hiện forgot-password */
+.container.forgot-mode .sign-in,
+.container.forgot-mode .sign-up {
+    display: none;
+}
+
+.container.forgot-mode .forgot-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
