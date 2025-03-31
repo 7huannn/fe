@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/index.css" />
   <link rel="canonical" href="https://vanilla-calendar.mateuszziomekit.com" />
+  <link rel="stylesheet" href="../styles/sidebar.css">
   <script src="/scripts/index.js" type="module"></script>
   <title>Vanilla Calendar | Responsive App with HTML, CSS & JavaScript - Mateusz Ziomek</title>
   <meta name="description"
@@ -32,6 +33,8 @@
   <meta name="twitter:image" content="https://vanilla-calendar.mateuszziomekit.com/thumbnail.jpg">
   <meta name="twitter:image:alt"
     content="A thumbnail of a Vanilla Calendar Youtube video, containing the mobile and the desktop view.">
+  <script src="../scripts/sidebar-toggle.js" defer></script>
+
 </head>
 
 <body>
@@ -679,6 +682,50 @@
       <button class="mini-calendar__day button button--sm" data-mini-calendar-day></button>
     </li>
   </template>
+  <div class="mini-sidebar">
+    <button id="sidebar-toggle" title="Toggle Sidebar">☰</button>
+  </div>
+  <div id="sidebar-menu" class="sidebar-menu hidden">
+    <h2 class="section-title">Workspace</h2>
+    <div class="grid-menu">
+      <button class="menu-card">
+        <i class="icon">📋</i>
+        <span>Boards</span>
+      </button>
+      <button class="menu-card">
+        <i class="icon">👥</i>
+        <span>Teams</span>
+      </button>
+      <button class="menu-card">
+        <i class="icon">💬</i>
+        <span>ChatBox</span>
+      </button>
+      <button class="menu-card">
+        <i class="icon">📅</i>
+        <span>Events</span>
+      </button>
+      <button class="menu-card">
+        <i class="icon">✅</i>
+        <span>Tasks</span>
+      </button>
+      <button class="menu-card">
+        <i class="icon">🎛️</i>
+        <span>Config</span>
+      </button>
+    </div>
+  
+    <h2 class="section-title">Statistics</h2>
+    <div class="grid-menu">
+      <button class="menu-card">
+        <i class="icon">⚠️</i>
+        <span>Alerts</span>
+      </button>
+      <button class="menu-card">
+        <i class="icon">📈</i>
+        <span>Trends</span>
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>
